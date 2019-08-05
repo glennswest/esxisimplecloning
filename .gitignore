@@ -2,4 +2,5 @@ archive/*
 gw/*
 dev.secret
 wip/*
+install-config.yaml
 
