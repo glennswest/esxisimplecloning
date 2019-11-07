@@ -1,10 +1,8 @@
 #!/bin/sh
 set -e
 
-clusterdir=~/devel/installer/cluster0/
-config=~/devel/installer/initial/install-config.yaml
 
-oc login https://api.ci.openshift.org --token=lAnqAwvaNgTLJWabkLo-do211o5NZEQeHjvG2JBjHHo
+oc login https://api.ci.openshift.org --token=QfHNI5FHm4dKUa-Zb4YC8jF-cW4TywjCM-28ssKlpwQ
 oc registry login
 version=$(curl -s https://openshift-release.svc.ci.openshift.org/api/v1/releasestream/4.2.0-0.ci/latest | jq '.pullSpec')
 echo $version
